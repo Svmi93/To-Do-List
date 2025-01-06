@@ -2,6 +2,13 @@
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
 const taskList = document.getElementById('taskList');
+const burgerMenu = document.getElementById('burgerMenu');
+const navLinks = document.getElementById('navLinks');
+
+burgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('show'); 
+});
+
 
 addTaskBtn.addEventListener('click', () => {
     const taskText = taskInput.value.trim();
